@@ -1,0 +1,56 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --background-color: hsl(212, 45%, 89%);
+    --text-color: hsl(220, 15%, 55%);
+    --heading-color: hsl(218, 44%, 22%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./Outfit-VariableFont_wght.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Outfit';
+    font-size: 15px;
+    background-color: var(--background-color);
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-header {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    padding-inline: 0.5em;
+}
+
+.card-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    padding-inline: 1.5em;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
